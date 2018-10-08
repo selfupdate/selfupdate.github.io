@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page Not Found</title>
+
+</head>
+<style type="text/css">
+    .main-center {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
+
+    .div-button {
+        font-size: 12px;
+        line-height: 40px;
+        text-align: center;
+        position: relative;
+        left: 50%;
+        margin-left: -70px;
+        margin-top: 31px;
+        border-radius: 4px;
+        color: #ffffff;
+        background-color: #0098FC;
+        cursor: pointer;
+    }
+
+    .div-button:hover {
+        background-color: #20a0ff;
+    }
+</style>
+<script>
+    function toHome() {
+        window.location.href = window.location.protocol + '//' + window.location.host;
+    }
+</script>
+<body style="margin: 0;width: 100%;height: 100%;min-height: 768px;min-width:1024px;background-color: #F3F4F5">
+<div style="width: 713px;height: 350px;background-color: #F3F4F5" class="main-center">
+    <div>
+        <div style="height: 261px">
+            <img src="404_bg.png">
+        </div>
+        <div style="font-size: 12px;text-align: center">
+            The requested page was not found.
+        </div>
+        <div style="width: 140px;height: 40px;" class="div-button" onclick="toHome()">
+            HomePage
+        </div>
+    </div>
+</div>
+</body>
+</html>
